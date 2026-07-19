@@ -1,0 +1,10 @@
+train:
+uv run train <Task-ID> ...
+
+follow up training:
+uv run train Mjlab-VelocityHeight-Flat-Unitree-G1 --env.scene.num-envs 4096 --agent.resume True --agent.load-run 2026-07-18_15-59-25 --agent.load-checkpoint model_6500.pt
+
+paly:
+uv run play <Task-ID> --viewer viser ...
+
+uv run play Mjlab-VelocityHeight-Flat-Unitree-G1 --viewer viser --checkpoint-file logs/rsl_rl/g1_velocity_height/2026-07-18_21-07-29/model_25700.pt

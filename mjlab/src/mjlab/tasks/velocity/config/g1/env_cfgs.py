@@ -236,10 +236,10 @@ def unitree_g1_flat_height_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
 
     cfg.rewards["track_base_height"] = RewardTermCfg(
         func=mdp.track_base_height,
-        weight=1.0,
+        weight=5.0,
         params={
             "command_name": "base_height",
-            "std": math.sqrt(0.25),
+            "std": math.sqrt(0.15),
         },
     )
 
